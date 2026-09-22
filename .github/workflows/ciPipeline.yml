@@ -1,0 +1,10 @@
+name: CI-Pipeline
+run-name: Testing after push
+on: [push]
+jobs:
+  Pipeline:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "This job was automatically triggered by ${{ github.actor }}."
+      - run: mvn clean verify
+      
