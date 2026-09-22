@@ -15,5 +15,5 @@ jobs:
           architecture: x64
 
       - name: run tests
-        run: mvn clean verify -f path/to/pom.xml 
+        run: mvn clean verify
       
